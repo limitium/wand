@@ -1,4 +1,4 @@
-# Wand - Xiaomi sensors advertisement listener
+# Wand - Xiaomi sensors bluetooth advertisement listener for esp32
 
 [![Build Status](https://travis-ci.org/limitium/wand.svg?branch=master)](https://travis-ci.org/limitium/wand)
 [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](http://doge.mit-license.org)
