@@ -1,0 +1,32 @@
+  
+{
+    "name":"Ward",
+    "description":"Xiaomi sensors advertisement listener",
+    "keywords":"ESP8266,ESP8266-library,ESP32,ESP32-library,mqtt,wifi",
+    "authors":
+    {
+      "name": "Sergey Belov",
+      "maintainer": true
+    },
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/limitium/wand.git"
+    },
+    "dependencies":[
+        {
+            "name": "nkolban/ESP32 BLE Arduino",
+            "version": "1.0.1"
+        }
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": [
+      "espressif8266",
+      "espressif32"
+    ],
+    "examples": [
+      "examples/*/*.ino"
+    ]
+  }
