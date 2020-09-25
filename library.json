@@ -16,7 +16,7 @@
     "dependencies":[
         {
             "name": "nkolban/ESP32 BLE Arduino",
-            "version": "1.0.1"
+            "version": "^1.0.1"
         }
     ],
     "version": "1.0.0",
