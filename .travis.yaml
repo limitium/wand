@@ -1,0 +1,19 @@
+language: python
+python:
+    - "2.7"
+
+sudo: false
+cache:
+    directories:
+        - "~/.platformio"
+
+env:
+    - PLATFORMIO_CI_SRC=examples/basic/basic.ino
+
+install:
+    - pip install -U platformio
+    - platformio update
+    - platformio lib -g install
+
+script:
+    - platformio ci --lib="." --board=esp12e
