@@ -10,3 +10,7 @@ void setup()
 
     wand.init();
 }
+
+void loop(){
+
+}

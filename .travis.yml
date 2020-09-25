@@ -16,4 +16,4 @@ install:
     - platformio lib -g install
 
 script:
-    - platformio ci --lib="." --board=esp12e
+    - platformio ci --lib="." --board="esp32dev"
