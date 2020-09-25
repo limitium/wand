@@ -15,7 +15,6 @@
     },
     "dependencies":[
         { 
-            "owner":"nkolban",
             "name": "ESP32 BLE Arduino",
             "version": "^1.0.1"
         }
