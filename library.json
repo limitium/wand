@@ -14,8 +14,10 @@
       "url": "https://github.com/limitium/wand.git"
     },
     "dependencies":[
-        {
-            "nkolban/ESP32 BLE Arduino":"^1.0.1"
+        { 
+            "owner":"nkolban",
+            "name": "ESP32 BLE Arduino",
+            "version": "^1.0.1"
         }
     ],
     "version": "1.0.0",
