@@ -9,6 +9,21 @@ Inspired by https://github.com/custom-components/sensor.mitemp_bt
 - Simplest usage and api ever
 - Supports a lot of Xiaomi sensors
 
+## Quick start
+
+```c++
+void setup()
+{
+    Serial.begin(9600);
+
+    WAND::Wand wand = WAND::Wand([](const char *sensorName, BLEAddress mac, const char *paramName, float value) {
+        Serial.printf("Sensor: %s, param: %s, val: %.2f\n", sensorName, paramName, value);
+    });
+
+    wand.init();
+}
+```
+
 ## Supported sensors
 - LYWSDCGQ
 
@@ -70,21 +85,6 @@ Inspired by https://github.com/custom-components/sensor.mitemp_bt
  
   ![supported sensors](https://github.com/custom-components/sensor.mitemp_bt/raw/master/pictures/WX08ZM.jpg)
 
-
-## Quick start
-
-```c++
-void setup()
-{
-    Serial.begin(9600);
-
-    WAND::Wand wand = WAND::Wand([](const char *sensorName, BLEAddress mac, const char *paramName, float value) {
-        Serial.printf("Sensor: %s, param: %s, val: %.2f\n", sensorName, paramName, value);
-    });
-
-    wand.init();
-}
-```
 
 ## Exmaple
 - [Basic](https://github.com/limitium/wand/tree/master/examples/basic) - basic=full usage example
