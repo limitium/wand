@@ -21,10 +21,11 @@ std::map<std::string, std::string> XIAOMI_SUPPORTED_SENSORS = {
     {"5d01", "HHCCPOT002"},
     // {"8703", "MHO-C401"},
     {"9800", "HHCCJCY01"},
-    {"aa01", "LYWSDCGQ"},
+    {"aa01", "LYWSDCGQ"}, 
     {"bc03", "GCLS002"},
     {"d306", "MHO-C303"},
-    {"df02", "JQJCY01YM"}};
+    {"df02", "JQJCY01YM"},
+    {"fffe", "LIMGC1"}};
 
 std::map<std::string, std::string> XIAOMI_VALUE_TYPES = {
     {"0410", "temperature"},
@@ -36,7 +37,10 @@ std::map<std::string, std::string> XIAOMI_VALUE_TYPES = {
     {"1210", "switch"},
     {"1310", "consumable"},
     {"0a10", "battery"},
-    {"0d10", "temperature,humidity"}};
+    {"0d10", "temperature,humidity"},
+    {"fffc", "ph"},
+    {"fffd", "etvoc"},
+    {"fffe", "eco2"}};
 
 std::string uintToHex(uint16_t val)
 {
@@ -193,6 +197,18 @@ public:
       if (strcmp("humidity", valueType) == 0)
       {
         realValue /= 10;
+      }
+      if (strcmp("ph", valueType) == 0)
+      {
+        realValue /= 10;
+      }
+      if (strcmp("eco2", valueType) == 0)
+      {
+        
+      }
+      if (strcmp("etvoc", valueType) == 0)
+      {
+        
       }
       callback(sensorType, advertisedDevice.getAddress(), valueType, realValue);
       break;
