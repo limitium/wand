@@ -25,7 +25,7 @@ void setup()
 ```
 
 ## Supported sensors
-- ![WRDSNR01](https://github.com/limitium/feeler)
+- [WRDSNR01](https://github.com/limitium/feeler)
    
   (custom co2 sensor, build on top of esp32)
   
