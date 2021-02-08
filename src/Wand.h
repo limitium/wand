@@ -38,9 +38,11 @@ std::map<std::string, std::string> XIAOMI_VALUE_TYPES = {
     {"1310", "consumable"},
     {"0a10", "battery"},
     {"0d10", "temperature,humidity"},
+    {"ff10", "concentration"},
+    {"fffa", "volume"},
+    {"fffb", "weight"},
     {"fffc", "ph"},
-    {"fffd", "etvoc"},
-    {"fffe", "eco2"}};
+    {"fffe", "co2"}};
 
 std::string uintToHex(uint16_t val)
 {
