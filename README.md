@@ -25,6 +25,12 @@ void setup()
 ```
 
 ## Supported sensors
+- [WRDSNR01](https://github.com/limitium/feeler)
+   
+  (custom co2 sensor, build on top of esp32)
+  
+  [![WRDSNR01](https://github.com/limitium/feeler/blob/master/docs/mhz19.PNG "Feeler")](https://github.com/limitium/feeler)
+  
 - LYWSDCGQ
 
   (round body, segment LCD, broadcasts temperature, humidity and battery level, about 20 readings per minute)
